@@ -5,12 +5,16 @@
         <form method="post" action="/account/signup">
             <input type="text" class="form-control" name="name" placeholder="Your Name..." />
             <br />
-            <input type="text" class="form-control" name="email" placeholder="Email" />
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
             <br />
             <input type="password" class="form-control" name="password" placeholder="Password" />
             <br />
-            <button class="btn btn-primary btn-block btn-lg">Sign up!</button>
+            <button class="btn btn-primary btn-block btn-lg" disabled>Sign up!</button>
         </form>
     </div>
-
 </div>
+
+
+@section scripts {
+    <script src="/js/signup.js"></script>
+}
